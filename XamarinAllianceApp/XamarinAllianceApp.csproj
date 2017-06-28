@@ -33,6 +33,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Design\ViewModelLocator.cs" />
     <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="Controllers\CharacterService.cs" />
@@ -40,9 +41,23 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="Views\CharacterDetail.xaml.cs">
+      <DependentUpon>CharacterDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CharacterListPage.xaml.cs">
       <DependentUpon>CharacterListPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\MainMasterDetailPage.xaml.cs">
+      <DependentUpon>MainMasterDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMasterDetailPageDetail.xaml.cs">
+      <DependentUpon>MainMasterDetailPageDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMasterDetailPageMaster.xaml.cs">
+      <DependentUpon>MainMasterDetailPageMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMasterDetailPageMenuItem.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -73,7 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="characters.json" />
+    <EmbeddedResource Include="characters.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +98,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Credits.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainMasterDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainMasterDetailPageMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainMasterDetailPageDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CharacterDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamarinAllianceApp.Controllers;
+using XamarinAllianceApp.Models;
 
 namespace XamarinAllianceApp.Views
 {
@@ -96,6 +97,23 @@ namespace XamarinAllianceApp.Views
                     indicatorDelay.ContinueWith(t => SetIndicatorActivity(false), TaskScheduler.FromCurrentSynchronizationContext());
                 }
             }
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void characterList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as Character;
+            if (item == null)
+                return;
+
+            await Navigation.PushAsync(new CharacterDetail(item));
+
+            // Manually deselect item
+            characterList.SelectedItem = null;
         }
     }
 }
