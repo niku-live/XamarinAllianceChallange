@@ -1,4 +1,6 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Auth;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -32,10 +34,36 @@ namespace XamarinAllianceApp.Controllers
             //local:
             //string mobileServiceClientUrl = "http://localhost:51537/";
             //challange:
-            //string mobileServiceClientUrl = "http://xamarinalliancebackend.azurewebsites.net";
+            string mobileServiceClientUrl = "http://xamarinalliancebackend.azurewebsites.net";
             //secure challenge:
-            string mobileServiceClientUrl = "https://xamarinalliancesecurebackend.azurewebsites.net";
+            //string mobileServiceClientUrl = "https://xamarinalliancesecurebackend.azurewebsites.net";
             return mobileServiceClientUrl;
+        }
+
+        public async Task<string> GetToken()
+        {            
+            var token = await CurrentClient.InvokeApiAsync("/api/StorageToken/CreateToken");
+            return token.ToString();
+        }
+
+        public async Task<byte[]> DownloadPicture(string token)
+        {
+            string storageAccountName = "xamarinalliance";
+            StorageCredentials credentials = new StorageCredentials(token);
+            CloudStorageAccount account = new CloudStorageAccount(credentials, storageAccountName, null, true);
+            var client = account.CreateCloudBlobClient();
+            var container = client.GetContainerReference("images");
+            var blob = container.GetBlobReference("XAMARIN-Alliance-logo.png");
+            MemoryStream stream = new MemoryStream();
+            await blob.DownloadToStreamAsync(stream);
+            return stream.ToArray();
+        }
+
+        public async Task<string> GetDiploma()
+        {
+            
+            var guid = await CurrentClient.InvokeApiAsync("/api/XamarinAlliance/ReceiveCredit");
+            return guid.ToString();
         }
 
 
