@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace XamarinAllianceApp.Models
 {
+
     public class Weapon
     {
         Int32 id;
@@ -32,6 +33,20 @@ namespace XamarinAllianceApp.Models
             set { description = value; }
         }
 
-        public string Version { get; set; }
+        [JsonProperty(PropertyName = "remoteId")]
+        object RemoteId { get; set; }
+
+        [JsonProperty(PropertyName = "version")]
+        string Version { get; set; }
+
+        [JsonProperty(PropertyName = "createdAt")]
+        DateTime CreatedAt { get; set; }
+
+        [JsonProperty(PropertyName = "updatedAt")]
+        DateTime UpdatedAt { get; set; }
+
+        [JsonProperty(PropertyName = "deleted")]
+        bool Deleted { get; set; }
+
     }
 }

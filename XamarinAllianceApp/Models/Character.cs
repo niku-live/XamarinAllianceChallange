@@ -73,4 +73,46 @@ namespace XamarinAllianceApp.Models
 
         public string Version { get; set; }
     }
+
+
+
+    public class Rootobject
+    {
+        public Class1[] Property1 { get; set; }
+    }
+
+    public class Class1
+    {
+        public bool deleted { get; set; }
+        public DateTime updatedAt { get; set; }
+        public DateTime createdAt { get; set; }
+        public string version { get; set; }
+        public string id { get; set; }
+        public object remoteId { get; set; }
+        public int height { get; set; }
+        public string gender { get; set; }
+        public string imageUrl { get; set; }
+        public string databankUrl { get; set; }
+        public string biography { get; set; }
+        public string name { get; set; }
+        public Appearance[] appearances { get; set; }
+        public Weapon[] weapons { get; set; }
+    }
+
+    public class Appearance
+    {
+        public string title { get; set; }
+        public string description { get; set; }
+        public object remoteId { get; set; }
+        public string id { get; set; }
+        public string version { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime updatedAt { get; set; }
+        public bool deleted { get; set; }
+    }
+
+
+
+
+
 }
