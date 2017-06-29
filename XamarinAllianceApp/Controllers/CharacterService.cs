@@ -13,6 +13,32 @@ namespace XamarinAllianceApp.Controllers
 {
     public class CharacterService
     {
+        private MobileServiceClient client;
+
+        public MobileServiceClient CurrentClient
+        {
+            get { return client; }
+        }
+
+        public CharacterService()
+        {
+            client = new MobileServiceClient(GetUrl());
+        }
+
+        private string GetUrl()
+        {
+            //my service test:
+            //string mobileServiceClientUrl = "https://eb59d72a-0ee0-4-231-b9ee.azurewebsites.net";
+            //local:
+            //string mobileServiceClientUrl = "http://localhost:51537/";
+            //challange:
+            //string mobileServiceClientUrl = "http://xamarinalliancebackend.azurewebsites.net";
+            //secure challenge:
+            string mobileServiceClientUrl = "https://xamarinalliancesecurebackend.azurewebsites.net";
+            return mobileServiceClientUrl;
+        }
+
+
         /// <summary>
         /// Get the list of characters
         /// </summary>
@@ -30,15 +56,8 @@ namespace XamarinAllianceApp.Controllers
         }
 
         private async Task<IEnumerable<Character>> ReadCharactersFromService()
-        {
-            //my service test:
-            string mobileServiceClientUrl = "http://eb59d72a-0ee0-4-231-b9ee.azurewebsites.net";
-            //local:
-            //string mobileServiceClientUrl = "http://localhost:51537/";
-            //challange:
-            //string mobileServiceClientUrl = "http://xamarinalliancebackend.azurewebsites.net";
-            MobileServiceClient client = new MobileServiceClient(mobileServiceClientUrl);
-            var table = client.GetTable<Character>();            
+        {            
+            var table = CurrentClient.GetTable<Character>();            
             return await table.ToListAsync();
         }
 
@@ -59,6 +78,19 @@ namespace XamarinAllianceApp.Controllers
 
             var characters = JsonConvert.DeserializeObject<Character[]>(text);
             return characters;
+        }
+
+        private static CharacterService defaultInstance = new CharacterService();
+        public static CharacterService DefaultManager
+        {
+            get
+            {
+                return defaultInstance;
+            }
+            private set
+            {
+                defaultInstance = value;
+            }
         }
     }
 }

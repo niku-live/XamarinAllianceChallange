@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using XamarinAllianceApp.Controllers;
 using XamarinAllianceApp.Views;
 
 namespace XamarinAllianceApp
@@ -27,6 +28,13 @@ namespace XamarinAllianceApp
 		{
 			// Handle when your app resumes
 		}
-	}
+
+        public static IAuthenticate Authenticator { get; private set; }
+
+        public static void Init(IAuthenticate authenticator)
+        {
+            Authenticator = authenticator;
+        }
+    }
 }
 

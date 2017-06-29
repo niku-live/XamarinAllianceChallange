@@ -1,3 +1,4 @@
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -102,6 +103,19 @@ namespace UWP
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+            base.OnActivated(args);
+
+            // We just need to handle activation that occurs after web authentication.
+            if (args.Kind == ActivationKind.WebAuthenticationBrokerContinuation)
+            {
+                // Get the client and call the LoginComplete method to complete authentication.
+                var client = XamarinAllianceApp.Controllers.CharacterService.DefaultManager.CurrentClient as MobileServiceClient;                
+                //client.LoginComplete(args as WebAuthenticationBrokerContinuationEventArgs);
+            }
         }
     }
 }

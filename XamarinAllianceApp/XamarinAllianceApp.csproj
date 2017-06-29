@@ -33,6 +33,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controllers\IAuthenticate.cs" />
     <Compile Include="Design\ViewModelLocator.cs" />
     <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Models\Character.cs" />

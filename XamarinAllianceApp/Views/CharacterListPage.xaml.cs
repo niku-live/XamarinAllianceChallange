@@ -56,6 +56,18 @@ namespace XamarinAllianceApp.Views
 
         private async Task RefreshItems(bool showActivityIndicator)
         {
+            bool authenticated = false;
+            if (App.Authenticator != null)
+                authenticated = await App.Authenticator.Authenticate();
+
+            // Set syncItems to true to synchronize the data on startup when offline is enabled.
+            if (!authenticated)
+            {
+                await DisplayAlert("Login error", "Please login...", "OK");
+                return;
+            }
+
+
             using (var scope = new ActivityIndicatorScope(syncIndicator, showActivityIndicator))
             {
                 characterList.ItemsSource = await service.GetCharactersAsync();
