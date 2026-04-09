@@ -1,0 +1,20 @@
+{
+  "scenarioId": "dotnet-version-upgrade",
+  "operationId": "72064f78-1e8a-46e5-96c0-4ee9e373c6de",
+  "description": "Upgrade .NET projects to newer .NET versions",
+  "startTime": "2026-04-09T16:50:54.1612213Z",
+  "lastUpdateTime": "2026-04-09T18:14:51.9670754Z",
+  "properties": {
+    "UpgradeTargetFramework": "net10.0",
+    "taskStates": {
+      "01-prerequisites": "Completed",
+      "02-sdk-style-conversion": "Completed",
+      "03-tfm-and-packages": "Completed",
+      "04-rewrite-startup": "Completed",
+      "05-rewrite-data-layer": "Completed",
+      "06-rewrite-controllers": "Completed",
+      "07-final-validation": "Completed"
+    }
+  },
+  "folderPath": ""
+}

@@ -1,0 +1,984 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-04-09T16:51:21.0014705Z",
+  "analysisEndTime": "2026-04-09T16:51:47.3119306Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 9,
+      "incidents": 34,
+      "effort": 34
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 20,
+        "Optional": 5,
+        "Potential": 9,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 25,
+        "Project": 2,
+        "Api": 7
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "XamarinBackendService\\XamarinBackendService.csproj",
+      "startingProject": true,
+      "issues": 8,
+      "storyPoints": 34,
+      "properties": {
+        "appName": "XamarinBackendService",
+        "projectKind": "Wap",
+        "frameworks": [
+          "net46"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "numberOfFiles": 19,
+        "numberOfCodeFiles": 12,
+        "linesTotal": 7662,
+        "linesOfCode": 463,
+        "totalApiScanned": 271,
+        "minLinesOfCodeToChange": 7,
+        "maxLinesOfCodeToChange": 7
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "a387f5f7-f356-41fd-92b6-798cbbd3c03f",
+          "ruleId": "NuGet.0002",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "EntityFramework, 6.1.3\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.1",
+              "protected": "EntityFramework, 6.1.3\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.1"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "EntityFramework, 6.1.3\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.1",
+            "protectedSnippet": "EntityFramework, 6.1.3\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.1",
+            "label": "EntityFramework 6.1.3",
+            "properties": {
+              "PackageId": "EntityFramework",
+              "PackageVersion": "6.1.3",
+              "PackageNewVersion": "6.5.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b2ec6126-8a54-48df-b4c9-ce3da6792ad1",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Client, 5.2.3\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0",
+              "protected": "Microsoft.AspNet.WebApi.Client, 5.2.3\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Client, 5.2.3\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Client, 5.2.3\n\nRecommendation:\n\nMicrosoft.AspNet.WebApi.Client, 6.0.0",
+            "label": "Microsoft.AspNet.WebApi.Client 5.2.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Client",
+              "PackageVersion": "5.2.3",
+              "PackageNewVersion": "6.0.0",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "89f1277b-b786-4f68-ac4d-75c2e4740944",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Core, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.Core, 5.2.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Core, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Core, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.Core 5.2.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Core",
+              "PackageVersion": "5.2.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "158016ea-8fe7-4456-bcfd-08e8ab2136f9",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.OData, 5.7.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.OData, 5.7.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.OData, 5.7.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.OData, 5.7.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.OData 5.7.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.OData",
+              "PackageVersion": "5.7.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ef6576a6-e809-468d-a606-658e98cfac48",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Owin, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.Owin, 5.2.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Owin, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Owin, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.Owin 5.2.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Owin",
+              "PackageVersion": "5.2.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d5deee9a-fed3-4313-9189-e853b46e08ca",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.Mobile.Server, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Azure.Mobile.Server, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Azure.Mobile.Server, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Azure.Mobile.Server, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Azure.Mobile.Server 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.Mobile.Server",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d1077c59-430f-411d-b7f6-51b830ea10dc",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.Mobile.Server.Authentication, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Azure.Mobile.Server.Authentication, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Azure.Mobile.Server.Authentication, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Azure.Mobile.Server.Authentication, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Azure.Mobile.Server.Authentication 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.Mobile.Server.Authentication",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "fbe3c589-c958-4dd6-9521-761abb5676b6",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.Mobile.Server.Entity, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Azure.Mobile.Server.Entity, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Azure.Mobile.Server.Entity, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Azure.Mobile.Server.Entity, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Azure.Mobile.Server.Entity 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.Mobile.Server.Entity",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c460765d-91ec-494c-ade3-d5f4ffff385d",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.Mobile.Server.Home, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Azure.Mobile.Server.Home, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Azure.Mobile.Server.Home, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Azure.Mobile.Server.Home, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Azure.Mobile.Server.Home 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.Mobile.Server.Home",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "8fc3ec9f-a1e4-40cc-9848-72b86a1fce49",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.Mobile.Server.Quickstart, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Azure.Mobile.Server.Quickstart, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Azure.Mobile.Server.Quickstart, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Azure.Mobile.Server.Quickstart, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Azure.Mobile.Server.Quickstart 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.Mobile.Server.Quickstart",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "144bab4c-593f-43a7-ba83-192533d7ab11",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.Mobile.Server.Tables, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Azure.Mobile.Server.Tables, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Azure.Mobile.Server.Tables, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Azure.Mobile.Server.Tables, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Azure.Mobile.Server.Tables 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.Mobile.Server.Tables",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "96916257-76df-4f8f-9010-7ff63de1f43f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5",
+              "protected": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5",
+            "protectedSnippet": "Microsoft.Data.Edm, 5.8.1\n\nRecommendation:\n\nMicrosoft.Data.Edm, 5.8.5",
+            "label": "Microsoft.Data.Edm 5.8.1",
+            "properties": {
+              "PackageId": "Microsoft.Data.Edm",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "8bcea2e4-7aeb-4bac-91da-5c82ff4583d9",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin, 4.2.2\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin, 4.2.2\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Owin, 4.2.2\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin, 4.2.2\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin 4.2.2",
+            "properties": {
+              "PackageId": "Microsoft.Owin",
+              "PackageVersion": "4.2.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "47b77975-aad3-4a07-a988-434152313034",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security 3.0.1",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security",
+              "PackageVersion": "3.0.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9ca87383-408e-4ab9-9bf8-95a160fee6a5",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.WindowsAzure.ConfigurationManager 3.2.3",
+            "properties": {
+              "PackageId": "Microsoft.WindowsAzure.ConfigurationManager",
+              "PackageVersion": "3.2.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "543fcf01-9399-4ee6-ac5b-e77e3e4a2912",
+          "ruleId": "NuGet.0002",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 13.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 13.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Newtonsoft.Json, 13.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 13.0.1\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 13.0.1",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "13.0.1",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3cfdf1ce-90a7-4f4e-b5b9-be98831c69bf",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Owin 1.0",
+            "properties": {
+              "PackageId": "Owin",
+              "PackageVersion": "1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9a33ef09-daa5-4189-94a2-1ea9177ff22a",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5",
+              "protected": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5",
+            "protectedSnippet": "System.Spatial, 5.8.1\n\nRecommendation:\n\nSystem.Spatial, 5.8.5",
+            "label": "System.Spatial 5.8.1",
+            "properties": {
+              "PackageId": "System.Spatial",
+              "PackageVersion": "5.8.1",
+              "PackageNewVersion": "5.8.5",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "bb87d4fe-8de2-4bbd-9b6b-96b401bb5d62",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Host.SystemWeb 3.0.1",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Host.SystemWeb",
+              "PackageVersion": "3.0.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d7eabd9e-8f85-46cd-b1c1-ced6e66597e5",
+          "ruleId": "NuGet.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebApi.Tracing, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.WebApi.Tracing, 5.2.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.AspNet.WebApi.Tracing, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.WebApi.Tracing, 5.2.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.WebApi.Tracing 5.2.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebApi.Tracing",
+              "PackageVersion": "5.2.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e8067f69-377c-46ac-9ba2-b6873de8e5fc",
+          "ruleId": "NuGet.0004",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AutoMapper, 5.2.0\n\nRecommendation:\n\nAutoMapper, 16.1.1",
+              "protected": "AutoMapper, 5.2.0\n\nRecommendation:\n\nAutoMapper, 16.1.1"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "AutoMapper, 5.2.0\n\nRecommendation:\n\nAutoMapper, 16.1.1",
+            "protectedSnippet": "AutoMapper, 5.2.0\n\nRecommendation:\n\nAutoMapper, 16.1.1",
+            "label": "AutoMapper 5.2.0",
+            "properties": {
+              "PackageId": "AutoMapper",
+              "PackageVersion": "5.2.0",
+              "PackageNewVersion": "16.1.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b41bca8f-7ea3-4c27-be07-20a289604817",
+          "ruleId": "NuGet.0005",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "EntityFramework, 6.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.1",
+              "protected": "EntityFramework, 6.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.1"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "EntityFramework, 6.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.1",
+            "protectedSnippet": "EntityFramework, 6.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.1",
+            "label": "EntityFramework 6.1.3",
+            "properties": {
+              "PackageId": "EntityFramework",
+              "PackageVersion": "6.1.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d2575e1f-d533-42e1-b314-dcb50e0c96e5",
+          "ruleId": "NuGet.0005",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Security, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Security 3.0.1",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security",
+              "PackageVersion": "3.0.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "45359a57-a8b2-4270-a8f7-fb1519facbe3",
+          "ruleId": "NuGet.0005",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nPlease note, this package is obsolete as of 3/31/2023 and is no longer maintained or monitored. Refer to our deprecation policy (https://aka.ms/azsdk/support-policies) for more details.\nRemove Microsoft.WindowsAzure.ConfigurationManager, and replace with new package Microsoft.WindowsAzure.ConfigurationManager, 3.2.3",
+              "protected": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nPlease note, this package is obsolete as of 3/31/2023 and is no longer maintained or monitored. Refer to our deprecation policy (https://aka.ms/azsdk/support-policies) for more details.\nRemove Microsoft.WindowsAzure.ConfigurationManager, and replace with new package Microsoft.WindowsAzure.ConfigurationManager, 3.2.3"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nPlease note, this package is obsolete as of 3/31/2023 and is no longer maintained or monitored. Refer to our deprecation policy (https://aka.ms/azsdk/support-policies) for more details.\nRemove Microsoft.WindowsAzure.ConfigurationManager, and replace with new package Microsoft.WindowsAzure.ConfigurationManager, 3.2.3",
+            "protectedSnippet": "Microsoft.WindowsAzure.ConfigurationManager, 3.2.3\n\nRecommendation:\n\nPlease note, this package is obsolete as of 3/31/2023 and is no longer maintained or monitored. Refer to our deprecation policy (https://aka.ms/azsdk/support-policies) for more details.\nRemove Microsoft.WindowsAzure.ConfigurationManager, and replace with new package Microsoft.WindowsAzure.ConfigurationManager, 3.2.3",
+            "label": "Microsoft.WindowsAzure.ConfigurationManager 3.2.3",
+            "properties": {
+              "PackageId": "Microsoft.WindowsAzure.ConfigurationManager",
+              "PackageVersion": "3.2.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b1ee6c36-1e17-424b-8dee-08b3b7480aae",
+          "ruleId": "NuGet.0005",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Host.SystemWeb, 3.0.1\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Host.SystemWeb 3.0.1",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Host.SystemWeb",
+              "PackageVersion": "3.0.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "eccc5a8f-effc-402f-91a9-04b418b245a5",
+          "ruleId": "Project.0001",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj"
+          }
+        },
+        {
+          "incidentId": "c6fc7250-65db-4dc0-a14d-ca87e8387793",
+          "ruleId": "Project.0002",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.6\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.6\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\XamarinBackendService.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.6\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.6\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.6",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "6627a9c4-ec48-45a2-ada6-2de80ae19296",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "request.RequestUri = modifiedRequestUri.Uri;",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\Helpers\\QueryableExpandAttribute.cs",
+            "snippet": "request.RequestUri = modifiedRequestUri.Uri;",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 49,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "64e6a026-e3ed-4b0a-a597-1e92db4a8885",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\App_Start\\Startup.MobileApp.cs",
+            "snippet": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "e48f0787-42b1-4a30-a079-b4cdc631dc20",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\App_Start\\Startup.MobileApp.cs",
+            "snippet": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "9a25c7d7-b978-4d40-aaa0-7bbe9b1de09f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\App_Start\\Startup.MobileApp.cs",
+            "snippet": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "5ba0c116-3582-4275-828a-2dd4c94eeba3",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\App_Start\\Startup.MobileApp.cs",
+            "snippet": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "76b84471-86bc-4a25-816b-3e5612f9736f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\App_Start\\Startup.MobileApp.cs",
+            "snippet": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 38,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "3982436e-da89-4f13-9858-54a627791df1",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "XamarinBackendService\\XamarinBackendService.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "XamarinBackendService\\App_Start\\Startup.MobileApp.cs",
+            "snippet": "app.UseAppServiceAuthentication(new AppServiceAuthenticationOptions\r\n                {\r\n                    SigningKey = ConfigurationManager.AppSettings[\u0022SigningKey\u0022],\r\n                    ValidAudiences = new[] { ConfigurationManager.AppSettings[\u0022ValidAudience\u0022] },\r\n                    ValidIssuers = new[] { ConfigurationManager.AppSettings[\u0022ValidIssuer\u0022] },\r\n                    TokenHandler = config.GetAppServiceTokenHandler()\r\n                });",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 38,
+            "column": 16
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "LegacyConfiguration",
+          "incidents": [
+            "3982436e-da89-4f13-9858-54a627791df1",
+            "76b84471-86bc-4a25-816b-3e5612f9736f",
+            "5ba0c116-3582-4275-828a-2dd4c94eeba3",
+            "9a25c7d7-b978-4d40-aaa0-7bbe9b1de09f",
+            "e48f0787-42b1-4a30-a079-b4cdc631dc20",
+            "64e6a026-e3ed-4b0a-a597-1e92db4a8885"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "LegacyConfiguration": {
+      "id": "LegacyConfiguration",
+      "isFeature": false,
+      "description": "Legacy XML-based configuration system (app.config/web.config) that has been replaced by a more flexible configuration model in .NET Core. The old system was rigid and XML-based. Migrate to Microsoft.Extensions.Configuration with JSON/environment variables; use System.Configuration.ConfigurationManager NuGet package as interim bridge if needed.",
+      "label": "Legacy Configuration System",
+      "severity": "Mandatory",
+      "effort": 2,
+      "links": [
+        {
+          "title": "Configuration in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341702",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
