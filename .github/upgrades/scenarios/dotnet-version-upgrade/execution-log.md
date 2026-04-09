@@ -28,3 +28,8 @@ Rewrote BaseDataObject (removed EntityData base, defined Id/Version/CreatedAt/Up
 
 Rewrote all three controllers (Character, Movie, Weapon) from Azure Mobile Server TableController<T> to ASP.NET Core ControllerBase. Each controller now uses [ApiController], [Route("tables/[controller]")], constructor-injected XamarinBackendContext, and [EnableQuery] from Microsoft.AspNetCore.OData. EF Core .Include() chains replace the old [QueryableExpand] attribute to preserve eager-loading behavior. Deleted Helpers/QueryableExpandAttribute.cs and the Helpers/ folder. Fixed nullable warnings triggered by enabling <Nullable>enable</Nullable> and <ImplicitUsings>enable</ImplicitUsings> in the csproj: optional string properties marked as nullable, collection properties initialized to new List<T>(). Build result: 0 errors, 0 warnings.
 
+
+## [2026-04-09 21:14] 07-final-validation
+
+Build: 0 errors, 0 warnings. Smoke test: app starts on http://localhost:5000 with 'Application started' log. No legacy references (Azure Mobile Server, OWIN, System.Web, TableController) remain in any source file. All 7 tasks completed. Deferred recommendations documented: EF Core migrations, integration tests, HTTPS, Key Vault for JWT signing key, MAUI migration for client projects.
+

@@ -1,6 +1,6 @@
 # Migration Progress
 
-**Progress**: 6/7 tasks complete <progress value="86" max="100"></progress> 86%
+**Progress**: 7/7 tasks complete <progress value="100" max="100"></progress> 100%
 **Status**: Not Started
 
 ## Tasks
@@ -11,6 +11,6 @@
 - ✅ 04-rewrite-startup: Replace OWIN startup with ASP.NET Core Program.cs ([Content](tasks/04-rewrite-startup/task.md), [Progress](tasks/04-rewrite-startup/progress-details.md))
 - ✅ 05-rewrite-data-layer: Migrate EF context and entities to EF Core ([Content](tasks/05-rewrite-data-layer/task.md), [Progress](tasks/05-rewrite-data-layer/progress-details.md))
 - ✅ 06-rewrite-controllers: Replace TableController with ControllerBase ([Content](tasks/06-rewrite-controllers/task.md), [Progress](tasks/06-rewrite-controllers/progress-details.md))
-- 🔲 07-final-validation: Full build and smoke test ([Content](tasks/07-final-validation/task.md))
+- ✅ 07-final-validation: Full build and smoke test ([Content](tasks/07-final-validation/task.md), [Progress](tasks/07-final-validation/progress-details.md))
 
 **Legend**: ✅ Complete | 🔄 In Progress | 🔲 Pending | ⚠️ Blocked | ❌ Failed
