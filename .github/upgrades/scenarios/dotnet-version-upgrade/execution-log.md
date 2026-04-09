@@ -18,3 +18,8 @@ Changed TFM from net46 to net10.0. Replaced 14 incompatible packages with 7 net1
 
 Created Program.cs (ASP.NET Core entry point with AddControllers/AddOData/AddDbContext/AddAuthentication/AddJwtBearer/AddAuthorization). Created appsettings.json (migrated connection string and JWT settings from Web.config). Deleted Startup.cs, App_Start/Startup.MobileApp.cs, Web.config, App_Start/ folder. Added Microsoft.AspNetCore.Authentication.JwtBearer 10.0.5 package (required explicitly). Program.cs compiles with 0 errors. Full build fails in controllers/data layer files (expected — fixed in Tasks 05-06).
 
+
+## [2026-04-09 20:42] 05-rewrite-data-layer
+
+Rewrote BaseDataObject (removed EntityData base, defined Id/Version/CreatedAt/UpdatedAt/Deleted as POCO properties with [Key] and [Timestamp] attributes). Removed Microsoft.Azure.Mobile.Server usings from Character, Movie, Weapon. Rewrote XamarinBackendContext to use EF Core DbContext with DbContextOptions<T> constructor, ModelBuilder in OnModelCreating, removed AttributeToColumnAnnotationConvention. All data layer files compile with 0 errors. Remaining errors are in Controllers/ and Helpers/ (Task 06 scope).
+

@@ -1,5 +1,4 @@
-﻿using Microsoft.Azure.Mobile.Server;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace XamarinBackendService.DataObjects
 {
@@ -8,7 +7,7 @@ namespace XamarinBackendService.DataObjects
         public string Title { get; set; }
 
         public string Description { get; set; }
-        public virtual ICollection<Character> Characters { get; set; }
 
+        public virtual ICollection<Character> Characters { get; set; }
     }
 }
