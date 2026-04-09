@@ -23,3 +23,8 @@ Created Program.cs (ASP.NET Core entry point with AddControllers/AddOData/AddDbC
 
 Rewrote BaseDataObject (removed EntityData base, defined Id/Version/CreatedAt/UpdatedAt/Deleted as POCO properties with [Key] and [Timestamp] attributes). Removed Microsoft.Azure.Mobile.Server usings from Character, Movie, Weapon. Rewrote XamarinBackendContext to use EF Core DbContext with DbContextOptions<T> constructor, ModelBuilder in OnModelCreating, removed AttributeToColumnAnnotationConvention. All data layer files compile with 0 errors. Remaining errors are in Controllers/ and Helpers/ (Task 06 scope).
 
+
+## [2026-04-09 20:51] 06-rewrite-controllers
+
+Rewrote all three controllers (Character, Movie, Weapon) from Azure Mobile Server TableController<T> to ASP.NET Core ControllerBase. Each controller now uses [ApiController], [Route("tables/[controller]")], constructor-injected XamarinBackendContext, and [EnableQuery] from Microsoft.AspNetCore.OData. EF Core .Include() chains replace the old [QueryableExpand] attribute to preserve eager-loading behavior. Deleted Helpers/QueryableExpandAttribute.cs and the Helpers/ folder. Fixed nullable warnings triggered by enabling <Nullable>enable</Nullable> and <ImplicitUsings>enable</ImplicitUsings> in the csproj: optional string properties marked as nullable, collection properties initialized to new List<T>(). Build result: 0 errors, 0 warnings.
+

@@ -14,7 +14,7 @@ namespace XamarinBackendService.DataObjects
         public string Id { get; set; }
 
         [Timestamp]
-        public byte[] Version { get; set; }
+        public byte[]? Version { get; set; }
 
         public DateTimeOffset? CreatedAt { get; set; }
 
@@ -22,6 +22,6 @@ namespace XamarinBackendService.DataObjects
 
         public bool Deleted { get; set; }
 
-        public string RemoteId { get; set; }
+        public string? RemoteId { get; set; }
     }
 }
