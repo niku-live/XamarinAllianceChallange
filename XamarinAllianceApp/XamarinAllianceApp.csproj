@@ -9,11 +9,15 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <!-- AssemblyVersion wildcard (1.0.*) requires non-deterministic builds -->
     <Deterministic>false</Deterministic>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
 
   <ItemGroup>
     <!-- Explicitly embed Xamarin.Forms XAML so it is available to XamlLoader at runtime -->
-    <!--<EmbeddedResource Include="**\*.xaml" />-->
+    <EmbeddedResource Include="**\*.xaml" />
+    <EmbeddedResource Update="**\*.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="characters.json" />
   </ItemGroup>
 
