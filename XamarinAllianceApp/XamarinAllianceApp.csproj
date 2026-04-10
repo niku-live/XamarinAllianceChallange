@@ -12,7 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- SDK auto-globs *.xaml as EmbeddedResource; only need to include non-default items -->
+    <!-- Explicitly embed Xamarin.Forms XAML so it is available to XamlLoader at runtime -->
+    <EmbeddedResource Include="**\*.xaml" />
     <EmbeddedResource Include="characters.json" />
   </ItemGroup>
 
