@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.xamarin.sample.XamarinAllianceApp">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
-	<application android:label="XamarinAllianceApp" android:icon="@drawable/icon"></application>
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="33" />
+	<application android:label="XamarinAllianceApp" android:icon="@drawable/icon">
+		<activity android:name="com.microsoft.windowsazure.mobileservices.authentication.RedirectUrlActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="com.xamarin.sample.xamarinallianceapp" />
+			</intent-filter>
+		</activity>
+	</application>
 </manifest>
