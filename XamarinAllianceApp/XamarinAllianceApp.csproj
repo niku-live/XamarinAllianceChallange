@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <!-- Explicitly embed Xamarin.Forms XAML so it is available to XamlLoader at runtime -->
-    <EmbeddedResource Include="**\*.xaml" />
+    <!--<EmbeddedResource Include="**\*.xaml" />-->
     <EmbeddedResource Include="characters.json" />
   </ItemGroup>
 
