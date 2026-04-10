@@ -40,7 +40,7 @@ namespace UWP
                 if (user == null)
                 {
                     user = await XamarinAllianceApp.Controllers.CharacterService.DefaultManager.CurrentClient
-                        .LoginAsync(MobileServiceAuthenticationProvider.MicrosoftAccount);
+                        .LoginAsync(MobileServiceAuthenticationProvider.MicrosoftAccount, "");
                     if (user != null)
                     {
                         success = true;

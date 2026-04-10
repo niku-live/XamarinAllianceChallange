@@ -35,7 +35,7 @@ namespace XamarinAllianceApp.iOS
                 {
                     user = await XamarinAllianceApp.Controllers.CharacterService.DefaultManager.CurrentClient
                         .LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,
-                        MobileServiceAuthenticationProvider.MicrosoftAccount);
+                        MobileServiceAuthenticationProvider.MicrosoftAccount, "");
                     if (user != null)
                     {
                         message = string.Format("You are now signed-in as {0}.", user.UserId);
@@ -49,7 +49,7 @@ namespace XamarinAllianceApp.iOS
             }
 
             // Display the success or failure message.
-            UIAlertView avAlert = new UIAlertView("Sign-in result", message, null, "OK", null);
+            UIAlertView avAlert = new UIAlertView("Sign-in result", message, (IUIAlertViewDelegate) null, "OK", null);
             avAlert.Show();
 
             return success;
