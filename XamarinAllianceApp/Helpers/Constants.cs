@@ -12,5 +12,11 @@ namespace XamarinAllianceApp.Helpers
         /// File name for the embedded characters JSON file
         /// </summary>
         public static readonly string CharactersFilename = "XamarinAllianceApp.characters.json";
+
+        /// <summary>
+        /// URL scheme used for OAuth redirect handling across all platforms.
+        /// Must match the intent-filter scheme in AndroidManifest.xml and any iOS/UWP URL scheme registrations.
+        /// </summary>
+        public static readonly string AppUrlScheme = "com.xamarin.sample.xamarinallianceapp";
     }
 }

@@ -35,7 +35,7 @@ namespace XamarinAllianceApp.iOS
                 {
                     user = await XamarinAllianceApp.Controllers.CharacterService.DefaultManager.CurrentClient
                         .LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,
-                        MobileServiceAuthenticationProvider.MicrosoftAccount, "");
+                        MobileServiceAuthenticationProvider.MicrosoftAccount, XamarinAllianceApp.Helpers.Constants.AppUrlScheme);
                     if (user != null)
                     {
                         message = string.Format("You are now signed-in as {0}.", user.UserId);

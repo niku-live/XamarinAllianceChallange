@@ -26,7 +26,7 @@ namespace XamarinAllianceApp.Droid
                 // Sign in with Facebook login using a server-managed flow.
                 
                 user = await XamarinAllianceApp.Controllers.CharacterService.DefaultManager.CurrentClient.LoginAsync(this,
-                    MobileServiceAuthenticationProvider.MicrosoftAccount, "");
+                    MobileServiceAuthenticationProvider.MicrosoftAccount, XamarinAllianceApp.Helpers.Constants.AppUrlScheme);
                 if (user != null)
                 {
                     message = string.Format("you are now signed-in as {0}.",
